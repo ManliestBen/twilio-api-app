@@ -7,6 +7,7 @@ class SignupForm extends Component {
   state = {
     name: '',
     email: '',
+    phone: '',
     password: '',
     passwordConf: ''
   };
@@ -51,6 +52,11 @@ class SignupForm extends Component {
               <input type="text" autocomplete="off" className="active" id="email" value={this.state.email} name="email" onChange={this.handleChange} />
               <label htmlFor="email">Email</label>
             </div>
+          </div>
+          <div className="input-field col s6">
+            <i className="material-icons prefix">phone</i>
+            <input id="icon_telephone" type="tel" className="validate" value={this.state.phone} name="phone" onChange={this.handleChange} />
+            <label htmlFor="icon_telephone">Telephone</label>
           </div>
           <div className="row">
             <div className="input-field col s12">
